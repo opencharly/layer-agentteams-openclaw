@@ -48,7 +48,6 @@ openclaw --help
 - `charly.yml` — the `agentteams-openclaw:` candy entity: the `layer-nodejs`
   require, the arch package section, and the `plan:` (cached source build +
   `check:` steps).
-- `.github/workflows/` — the org-wide `charly/pr-validator` gate; no per-repo candy gate.
 - `.github/workflows/tag-on-merge.yml` — CalVer tag + `CHANGELOG/` on merge.
 - `README.md` — this user overview.
 

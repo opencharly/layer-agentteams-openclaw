@@ -14,7 +14,6 @@ adds a `skill:` entity, project it as `/charly-agentteams:<name>` here.
 Canonical files:
 
 - `charly.yml` — the `agentteams-openclaw:` candy entity (require, packages, plan).
-- `.github/workflows/` — the org-wide `charly/pr-validator` gate; there is no per-repo candy gate.
 - `.github/workflows/tag-on-merge.yml` — CalVer tag + `CHANGELOG/` on merge.
 - `README.md` — user overview only; never agent guidance.
 
@@ -34,8 +33,9 @@ Canonical files:
 
 - `charly box validate` at the repo root — the same structural gate CI runs.
   Keep the `version:` schema stamp within the installed charly's supported range.
-- The merge gate is the org-wide `charly/pr-validator` (required check
-  `validate / validate`); there is no per-repo candy gate.
+- The merge gate is the **org-wide** `charly/pr-validator` (required check
+  `validate / validate`, defined in `opencharly/.github`); this repo has no
+  per-repo candy gate.
 - There is no live bed: the candy is a build, so the evidence is its `plan:`
   `check:` steps — `/usr/local/bin/openclaw` is a symlink and
   `/opt/openclaw/extensions/matrix` is a directory.
