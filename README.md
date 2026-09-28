@@ -48,7 +48,6 @@ openclaw --help
 - `charly.yml` — the `agentteams-openclaw:` candy entity: the `layer-nodejs`
   require, the arch package section, and the `plan:` (cached source build +
   `check:` steps).
-- `.github/workflows/deploy.yml` — the manifest gate (`charly box validate`).
 - `.github/workflows/tag-on-merge.yml` — CalVer tag + `CHANGELOG/` on merge.
 - `README.md` — this user overview.
 
